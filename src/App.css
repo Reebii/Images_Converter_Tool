@@ -1,0 +1,92 @@
+/* App.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0e7ff, #f0f4ff, #ffffff);
+  min-height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.converter-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.converter-box h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #4f46e5;
+  margin-bottom: 1.5rem;
+}
+
+.file-input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+}
+
+.format-select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1.25rem;
+  border-radius: 0.375rem;
+  border: 1px solid #ccc;
+}
+
+.convert-button,
+.download-button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.convert-button {
+  background-color: #4f46e5;
+  color: white;
+  margin-bottom: 0.75rem;
+}
+
+.convert-button:hover {
+  background-color: #4338ca;
+}
+
+.download-button {
+  background-color: #e5e7eb;
+  color: #111827;
+}
+
+.download-button:hover {
+  background-color: #d1d5db;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
